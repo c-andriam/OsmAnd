@@ -697,7 +697,7 @@ public class RenderingRulesStorage {
 			defaultIS = RenderingRulesStorage.class.getResourceAsStream("default.render.xml");
 		} else {
 			
-			File stylesDir = new File("../../resources/rendering_styles/");
+			File stylesDir = new File("../../OsmAnd-resources/rendering_styles/");
 			System.out.println(stylesDir.getCanonicalFile().getAbsolutePath());
 			defaultIS = new FileInputStream(new File(stylesDir, "default.render.xml"));
 			styleName = "default";

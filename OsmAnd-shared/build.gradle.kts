@@ -11,6 +11,19 @@ plugins {
 
 group = "net.osmand.shared"
 
+android {
+	namespace = "net.osmand.shared"
+	compileSdk = 35
+    buildToolsVersion = "35.0.0"
+	compileOptions {
+		sourceCompatibility = JavaVersion.VERSION_17
+		targetCompatibility = JavaVersion.VERSION_17
+	}
+	defaultConfig {
+		minSdk = 24
+	}
+}
+
 kotlin {
 	jvm {
 		@OptIn(ExperimentalKotlinGradlePluginApi::class)
@@ -97,6 +110,7 @@ kotlin {
 android {
 	namespace = "net.osmand.shared"
 	compileSdk = 35
+    buildToolsVersion = "35.0.0"
 	compileOptions {
 		sourceCompatibility = JavaVersion.VERSION_17
 		targetCompatibility = JavaVersion.VERSION_17

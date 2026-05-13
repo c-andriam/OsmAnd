@@ -147,8 +147,8 @@ tasks.register('downloadPrebuiltTelegram') {
 }
 
 tasks.register('collectFonts', Copy) {
-	from "../../resources/fonts"
-	from "../../resources/fonts-telegram"
+	from "../../OsmAnd-resources/fonts"
+	from "../../OsmAnd-resources/fonts-telegram"
 	into "assets/fonts"
 	include "*.ttf"
 }
